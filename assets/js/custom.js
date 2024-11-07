@@ -6,8 +6,6 @@ const cursor = document.querySelector('.cursor');
 
 // 9. Лоадер
 window.onload = function() {
-    loader.style.display = 'block';
-    content.style.display = 'none';
     setTimeout(() => {
         loader.style.display = 'none';
         content.style.display = 'block';
