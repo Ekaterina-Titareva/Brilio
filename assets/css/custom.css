@@ -1,0 +1,132 @@
+/* 1. Стрелочка должна двигаться при наведении на кнопку */
+.btn:hover .icon {
+  animation: swap var(--transition-function) var(--transition-duration);
+}
+
+/* 2. Изображения с классом .circle-1 и .circle-2 должны плавно передвигаться на фоне */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: var(--transform-scale);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.hero-section .hero-bg .circle-1 {
+  animation: 20s linear scale infinite;
+}
+
+.hero-section .hero-bg .circle-2 {
+  animation: 15s linear rotate infinite;
+}
+
+/* 3. При наведении на каждую строчку .list-group-item блока Awards он окрашивается в черный цвет и внутри элементы немного сдвигаются внутрь */
+.list-group-item::after,
+.list-group-item h4,
+.list-group-item .content,
+.list-group-item .bi-arrow-right-short {
+  transition: 0.5s var(--transition-function);
+}
+
+.list-group-item:hover::after {
+  height: 100%;
+}
+
+.list-group-item:hover h4,
+.list-group-item:hover .content,
+.list-group-item:hover .bi-arrow-right-short {
+  color: var(--white-color);
+}
+
+.list-group-item:hover .content {
+  padding-left: 25px;
+}
+
+.list-group-item:hover .award-btn {
+  right: 25px;
+}
+
+/* 4. В разделе Insights  при наведении на категории необходимо сделать плавный opacity 0.6 */
+.badge {
+  transition: var(--transition-duration) linear;
+}
+
+.badge:hover {
+  opacity: 0.6;
+}
+
+/* 5. Реализовать подчеркивание текста и над изображением появление блока с автором. */
+.card .fade-down,
+.title a {
+  transition: 0.7s ease-in;
+}
+
+.card:hover .fade-down {
+  transform: translateY(0);
+  opacity: 1;
+}
+.card:hover .title a {
+  background-size: 0 5%;
+}
+
+.marquee .item:nth-child(even) {
+  transform: rotate(4deg);
+}
+
+.marquee .item:nth-child(odd) {
+  transform: rotate(-4deg);
+}
+
+/*7. Используя CSS сделайте так, чтобы точки под пунктами меню выводились плавно при наведении, а цвет текста менялся на opacity 0.6 */
+.nav-item .nav-link,
+.nav-item .nav-link::after {
+  transition: var(--transition-function) var(--transition-duration);
+}
+
+.nav-item:hover .nav-link {
+  opacity: 0.6;
+}
+
+header .navbar-expand .navbar-nav .nav-item:hover .nav-link::after {
+  transform: scale(1);
+}
+
+/* 8. Курсор */
+.cursor {
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--primary-t-color-2);
+  border-radius: 50%;
+  position: fixed;
+  margin-top: -20px;
+  margin-left: -20px;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+/* 9. Лоадер */
+.loader {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rotating-loader {
+  animation: rotate 2s linear infinite;
+}

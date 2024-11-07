@@ -8,13 +8,30 @@
 	<title>Brilio</title>
 	<link rel="icon" href="assets/img/favicon.png">
 	<link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body>
+	<div class="loader">
+		<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'>
+			<radialGradient id='a12' cx='.66' fx='.66' cy='.3125' fy='.3125' gradientTransform='scale(1.5)'>
+				<stop offset='0' stop-color='#030712'></stop>
+				<stop offset='.3' stop-color='#030712' stop-opacity='.9'></stop>
+				<stop offset='.6' stop-color='#030712' stop-opacity='.6'></stop>
+				<stop offset='.8' stop-color='#030712' stop-opacity='.3'></stop>
+				<stop offset='1' stop-color='#030712' stop-opacity='0'></stop>
+			</radialGradient>
+			<circle class="rotating-loader" transform-origin='center' fill='none' stroke='url(#a12)' stroke-width='15'
+				stroke-linecap='round' stroke-dasharray='200 1000' stroke-dashoffset='0' cx='100' cy='100' r='70'>
+			</circle>
+			<circle transform-origin='center' fill='none' opacity='.2' stroke='#030712' stroke-width='15'
+				stroke-linecap='round' cx='100' cy='100' r='70'></circle>
+		</svg>
+	</div>
 
 	<!-- ***** Main Area Start ***** -->
 	<div class="main">
+		<div class="cursor"></div>
 		<!-- ***** Header Start ***** -->
 		<header id="header">
 			<!-- Navbar -->
@@ -58,7 +75,7 @@
 			</nav>
 
 			<div id="navbar-main" class="main">
-				
+
 			</div>
 		</header>
 		<!-- ***** Header End ***** -->
@@ -74,14 +91,19 @@
 							<!-- Hero Content -->
 							<div class="hero-content">
 								<span class="intro-text">Hello! I’m Brilio.</span>
-								<h1 class="title section-title mt-3 mt-md-4 mb-md-5">Creating impactful experiences on <span>visual design</span></h1>
+								<h1 class="title section-title mt-3 mt-md-4 mb-md-5">Creating impactful experiences on
+									<span>visual design</span>
+								</h1>
 
 								<!-- Content -->
 								<div class="content d-flex flex-column flex-md-row justify-content-md-between">
 									<div class="hero-button order-last order-md-first mt-4 mt-md-0">
-										<a class="btn magnetic-button" href="contact.html">Let's Talk! <i class="icon bi bi-arrow-right ms-1"></i><span></span></a>
+										<a class="btn magnetic-button" href="contact.html">Let's Talk! <i
+												class="icon bi bi-arrow-right ms-1"></i><span></span></a>
 									</div>
-									<p class="sub-title order-first order-md-last">I transform ideas into impactful digital experiences, delivering innovative solutions that elevate brands and captivate audiences around the world.</p>
+									<p class="sub-title order-first order-md-last">I transform ideas into impactful
+										digital experiences, delivering innovative solutions that elevate brands and
+										captivate audiences around the world.</p>
 								</div>
 
 							</div>
@@ -103,7 +125,8 @@
 							<!-- Intro -->
 							<div class="intro d-flex justify-content-between align-items-center">
 								<h3 class="title">Selected Works</h3>
-								<a class="btn btn-outline content-btn swap-icon" href="portfolio.html">View All <i class="icon bi bi-arrow-right-short"></i></a>
+								<a class="btn btn-outline content-btn swap-icon" href="portfolio.html">View All <i
+										class="icon bi bi-arrow-right-short"></i></a>
 							</div>
 						</div>
 					</div>
@@ -226,12 +249,16 @@
 						<div class="col-12">
 							<!-- Content -->
 							<div class="content">
-								<h2 class="title reveal-text mt-0">Helping brands achieve digital mastery of creative innovation and strategic planning.</h2>
+								<h2 class="title reveal-text mt-0">Helping brands achieve digital mastery of creative
+									innovation and strategic planning.</h2>
 							</div>
 
 							<div class="wrapper">
-								<p class="sub-title">Transforming ideas into digital realities by blending strategic insights with innovative design, helping brands thrive in a rapidly evolving digital landscape.</p>
-								<a class="btn magnetic-button btn-outline" href="about.html">About Me <i class="icon bi bi-arrow-right ms-1"></i><span></span></a>
+								<p class="sub-title">Transforming ideas into digital realities by blending strategic
+									insights with innovative design, helping brands thrive in a rapidly evolving digital
+									landscape.</p>
+								<a class="btn magnetic-button btn-outline" href="about.html">About Me <i
+										class="icon bi bi-arrow-right ms-1"></i><span></span></a>
 							</div>
 						</div>
 					</div>
@@ -243,7 +270,9 @@
 								<div class="item-count">01</div>
 								<div class="content">
 									<h4 class="mt-0">Branding</h4>
-									<p>I craft distinctive brand identities that resonate and endure. Through strategic insight and meticulous design, I build a unified visual language that captures your essence and speaks to your audience.</p>
+									<p>I craft distinctive brand identities that resonate and endure. Through strategic
+										insight and meticulous design, I build a unified visual language that captures
+										your essence and speaks to your audience.</p>
 								</div>
 							</div>
 						</div>
@@ -254,7 +283,9 @@
 								<div class="item-count">02</div>
 								<div class="content">
 									<h4 class="mt-0">UI/UX</h4>
-									<p>Designing intuitive and engaging user experiences that seamlessly blend form and function. I focus on creating interfaces that are not only visually appealing but also deeply functional and user-centric.</p>
+									<p>Designing intuitive and engaging user experiences that seamlessly blend form and
+										function. I focus on creating interfaces that are not only visually appealing
+										but also deeply functional and user-centric.</p>
 								</div>
 							</div>
 						</div>
@@ -265,7 +296,9 @@
 								<div class="item-count">03</div>
 								<div class="content">
 									<h4 class="mt-0">App Design</h4>
-									<p>Transforming ideas into captivating app experiences. I design with precision and creativity, ensuring every interaction is smooth and every visual element enhances user delight and engagement.</p>
+									<p>Transforming ideas into captivating app experiences. I design with precision and
+										creativity, ensuring every interaction is smooth and every visual element
+										enhances user delight and engagement.</p>
 								</div>
 							</div>
 						</div>
@@ -424,7 +457,7 @@
 						</li>
 					</ul>
 				</div>
-                
+
 			</section>
 			<!-- ***** Services Area End ***** -->
 
@@ -502,7 +535,8 @@
 							<!-- Intro -->
 							<div class="intro d-flex justify-content-between align-items-center">
 								<h3 class="title">Insights</h3>
-								<a class="btn btn-outline content-btn swap-icon" href="blog.html">View All <i class="icon bi bi-arrow-right-short"></i></a>
+								<a class="btn btn-outline content-btn swap-icon" href="blog.html">View All <i
+										class="icon bi bi-arrow-right-short"></i></a>
 							</div>
 						</div>
 					</div>
@@ -530,10 +564,12 @@
 								<div class="card-content mt-3">
 									<div class="heading">
 										<div class="post-meta d-flex">
-											<span class="post-date"><i class="bi bi-clock me-1"></i>August 20, 2024</span>
+											<span class="post-date"><i class="bi bi-clock me-1"></i>August 20,
+												2024</span>
 										</div>
 										<h4 class="title my-2">
-											<a href="blog-single.html">The Future of Digital Design - Trends to Watch</a>
+											<a href="blog-single.html">The Future of Digital Design - Trends to
+												Watch</a>
 										</h4>
 										<div class="card-terms">
 											<a class="terms badge" href="#">Branding</a>
@@ -567,10 +603,12 @@
 								<div class="card-content mt-3">
 									<div class="heading">
 										<div class="post-meta d-flex">
-											<span class="post-date"><i class="bi bi-clock me-1"></i>August 20, 2024</span>
+											<span class="post-date"><i class="bi bi-clock me-1"></i>August 20,
+												2024</span>
 										</div>
 										<h4 class="title my-2">
-											<a href="blog-single.html">Building User Trust Through Thoughtful UI/UX Design</a>
+											<a href="blog-single.html">Building User Trust Through Thoughtful UI/UX
+												Design</a>
 										</h4>
 										<div class="card-terms">
 											<a class="terms badge" href="#">UI/UX</a>
@@ -603,10 +641,12 @@
 								<div class="card-content mt-3">
 									<div class="heading">
 										<div class="post-meta d-flex">
-											<span class="post-date"><i class="bi bi-clock me-1"></i>August 20, 2024</span>
+											<span class="post-date"><i class="bi bi-clock me-1"></i>August 20,
+												2024</span>
 										</div>
 										<h4 class="title my-2">
-											<a href="blog-single.html">The Role of Color Psychology in Effective Branding</a>
+											<a href="blog-single.html">The Role of Color Psychology in Effective
+												Branding</a>
 										</h4>
 										<div class="card-terms">
 											<a class="terms badge" href="#">Design</a>
@@ -631,7 +671,8 @@
 							<div class="cta-text">
 								<span class="line-item">Together</span>
 								<span class="line"></span>
-								<a class="btn magnetic-button" href="contact.html">Get In Touch! <i class="icon bi bi-arrow-right ms-1"></i><span></span></a>
+								<a class="btn magnetic-button" href="contact.html">Get In Touch! <i
+										class="icon bi bi-arrow-right ms-1"></i><span></span></a>
 							</div>
 						</div>
 					</div>
@@ -644,7 +685,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<div class="footer-content d-flex flex-wrap justify-content-center justify-content-md-between align-items-center py-4">
+							<div
+								class="footer-content d-flex flex-wrap justify-content-center justify-content-md-between align-items-center py-4">
 								<!-- Copyright -->
 								<div class="copyright">&copy;2024 Brilio, All Rights Reserved By Themeland</div>
 								<!-- Scroll To Top -->
@@ -752,9 +794,12 @@
 							<!-- Socials -->
 							<div class="socials offcanvas-body">
 								<nav class="nav">
-									<a class="nav-link swap-icon" href="#">Youtube <i class="icon rotate bi bi-arrow-right-short"></i></a>
-									<a class="nav-link swap-icon" href="#">Pinterest<i class="icon rotate bi bi-arrow-right-short"></i></a>
-									<a class="nav-link swap-icon" href="#">Linkedin <i class="icon rotate bi bi-arrow-right-short"></i></a>
+									<a class="nav-link swap-icon" href="#">Youtube <i
+											class="icon rotate bi bi-arrow-right-short"></i></a>
+									<a class="nav-link swap-icon" href="#">Pinterest<i
+											class="icon rotate bi bi-arrow-right-short"></i></a>
+									<a class="nav-link swap-icon" href="#">Linkedin <i
+											class="icon rotate bi bi-arrow-right-short"></i></a>
 								</nav>
 							</div>
 						</div>
@@ -776,10 +821,10 @@
 	<script src="assets/js/vendor/bootstrap.min.js"></script>
 
 	<!-- Plugins js -->
-
+	<script src="assets/js/vendor/anime.min.js"></script>
 	<!-- Main js -->
 	<script src="assets/js/main.js"></script>
-    <script src="assets/js/custom.js"></script>
+	<script src="assets/js/custom.js"></script>
 </body>
 
 </html>
