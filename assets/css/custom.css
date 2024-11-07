@@ -118,7 +118,11 @@ header .navbar-expand .navbar-nav .nav-item:hover .nav-link::after {
 }
 
 /* 9. Лоадер */
+.main {
+  display: none;
+}
 .loader {
+  display: block;
   width: 200px;
   height: 200px;
   position: absolute;
